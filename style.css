@@ -7,6 +7,7 @@
 body {
   font-family: 'Roboto', sans-serif;;
   margin: 0;
+  padding: 1rem;
   background-image: url('./assets/bg.jpg');
   background-size: cover;
   background-position: center center;
@@ -22,32 +23,49 @@ h1 {
   font-size: 3rem;
   line-height: 1;
   margin-top: 3rem;
+  margin-bottom: 1rem;
   font-weight: 100;
+  color: #729293;
 }
 
 .countdown-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .big-text {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1;
-  margin: 0 1rem;
+  margin: 0;
+  color: #173630;
 }
 
 .countdown-el {
   text-align: center;
+  margin: 0 1rem;
 }
 
 .countdown-el span {
   font-size: 1rem;
   font-weight: 300;
+  color: #173630;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+  padding: 1rem;
+}
+
+footer span {
+  color: white;
+  font-size: .75rem;
+}
 
 /* Responsividade */
 @media only screen and (max-width: 320px) {
@@ -65,31 +83,23 @@ h1 {
   .countdown-el span {}  
 }
 @media only screen and (max-width: 600px) {
-  h1 {}  
-  .countdown-container {}  
-  .big-text {}  
-  .countdown-el {}  
-  .countdown-el span {}  
-}
-@media only screen and (max-width: 768px) {
-  h1 {}  
-  .countdown-container {}  
-  .big-text {}  
-  .countdown-el {}  
-  .countdown-el span {}  
-}
-@media only screen and (max-width: 992px) {
-  h1 {}  
-  .countdown-container {}  
-  .big-text {}  
-  .countdown-el {}  
-  .countdown-el span {}  
-}
-@media only screen and (max-width: 1260px) {
-  h1 {}  
-  .countdown-container {}  
-  .big-text {}  
-  .countdown-el {}  
-  .countdown-el span {}  
+  h1 {
+    font-size: 1.5rem;
+    margin: .5rem 1rem 0;
+  }  
+  .countdown-container {
+    flex-direction: column;
+    margin-top: .5rem;
+  }  
+  .big-text {
+    font-size: 2.5rem;
+  }  
+  .countdown-el {
+    margin: .5rem 1rem;
+  }  
+  .countdown-el span {
+    font-weight: 700;
+    font-size: .75rem;
+  }
 }
 /* End Responsividade */
